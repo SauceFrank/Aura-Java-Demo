@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="100" verbose="0" name="Failed suite [Surefire suite]" parallel="methods">
+  <test name="Surefire test(failed)" parallel="methods">
+    <classes>
+      <class name="com.aura.SampleSauceTest">
+        <methods>
+          <include name="AuraPageAirports" invocation-numbers="9 10"/>
+          <include name="AuraPageGastronomy" invocation-numbers="9"/>
+          <include name="AuraPageAircraft" invocation-numbers="9"/>
+          <include name="tearDown"/>
+          <include name="AuraPageJoin" invocation-numbers="9 10"/>
+          <include name="AuraPageRoutes" invocation-numbers="9"/>
+        </methods>
+      </class> <!-- com.aura.SampleSauceTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
